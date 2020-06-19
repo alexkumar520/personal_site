@@ -28,7 +28,7 @@ export default class SpotifyImage extends React.Component {
 
           const data = {
             grant_type: 'refresh_token',
-            refresh_token: 'AQBSirSXlEjwHePfS1LRQX2UYf__arNBfw60blP1foUgDFXrG1tiONZPxJHzZ5F0dC8elGDq2aRg49zRajZx3rHWnv0Eeij1jukXFfdtAdwh209ZAeNKUCLORUnPn5gJ1to'
+            refresh_token: process.env.REACT_APP_REFRESH_TOKEN
           };
         
 
@@ -37,7 +37,7 @@ export default class SpotifyImage extends React.Component {
         headers
         ).then(res => {
             
-            console.log("getting access");
+            //console.log("getting access");
             
             
             axios.get('https://api.spotify.com/v1/me/player/currently-playing', {
@@ -45,9 +45,9 @@ export default class SpotifyImage extends React.Component {
                     'Authorization': 'Bearer ' + res.data.access_token
                    }}
                 ).then(response => {
-                    console.log(response);
-                    console.log(response.status);
-                    console.log(typeof(response.status));
+                    //console.log(response);
+                    //console.log(response.status);
+                    //console.log(typeof(response.status));
                     if ((response.status) != 200 ){
                         console.log("Not playing anything");
                     }
@@ -60,10 +60,10 @@ export default class SpotifyImage extends React.Component {
                     });
                 }
 
-                    console.log(this.state.image);
+                    //console.log(this.state.image);
                     console.log("the title is: " + this.state.title);
-                    console.log(this.state.artists);
-                    console.log(this.state.link);
+                    //console.log(this.state.artists);
+                    //console.log(this.state.link);
 
                 }).catch(err => console.log(err))
 
