@@ -14,8 +14,7 @@ export default class SpotifyImage extends React.Component {
     }
 
     componentDidMount(){
-        console.log(process.env.REACT_APP_CLIENT_ID);
-        console.log(process.env.REACT_APP_CLIENT_SECRET);
+        
         const headers = {
             headers: {
               Accept: 'application/json',
