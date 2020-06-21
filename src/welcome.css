@@ -3,6 +3,13 @@ body{
     align-items: center;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar-custom{
+    color: lightcoral;
+}
 
 .welcome{
     margin: auto;
