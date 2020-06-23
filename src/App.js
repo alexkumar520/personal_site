@@ -1,66 +1,106 @@
 import React from 'react';
-import SpotifyImage from './SpotifyImage'
+import SpotifyImage from './SpotifyImage';
 import './welcome.css';
 import alex from './alex.jpg';
-import {Link} from 'react-scroll';
+
+
+
 
 
 function App() {
   return (
     <>
-    <nav class="navbar navbar-expand-lg navbar-custom ">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <ul class="navbar-nav mr-auto">
-    <li class="nav-item active">
-      <a class="nav-link">Left Link 1</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link">Left Link 2</a>
-    </li>
-  </ul>
-  <ul class="navbar-nav ml-auto">
-    <li class="nav-item active">
-      <a class="nav-link" href="#box">About Me</a>
-    </li>
-      <a class="nav-link" href="#">Contact Me</a>
-    
-  </ul>
-</nav>
-    <div className="welcome">
-      <a className="banner-text"> Hi, I'm Alex Kumar! </a>
-      <br></br>
-      <img src={alex}className="format"></img>
-      <br></br>
-      <p className="new-text">I'm a student at the University of California, Irvine (UCI) studying computer science!<br></br><br></br> When I'm working or pretty much doing anything I almost always listen to music! <br></br><br></br> I also love basketball, video games, and eating good food! <br></br><br></br> Check out my social media!</p>
-      <a className="new-text"> Insert links/images here</a>
-      <br></br>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+      <a class="navbar-brand" href="/" id="white-text">Alex Kumar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" id="white-text">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#box" id="white-text">About Me </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#contact" id="white-text">Other info</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </nav>
+
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
     
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br><br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <a className ="listening"> Here's what I'm listening to right now...</a>
-    </div>
     <SpotifyImage />
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
+    
+
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <div className="darken">
+
+      <div class="container-fluid bg-dark" id="contact">
+        <p class="text-center" id="contact-banner">Check out my social media!</p>
+        <div class="row">
+          <div class="container bg-dark">
+            <div class="row">
+              <div class="col-sm text-center mb-3" id="white-text">
+              <a href="https://www.linkedin.com/in/alexkumar520/" className="social"><i class="fa fa-linkedin-square" aria-hidden="true" id="contact-icon"></i></a>
+              
+              </div>
+              <div class="col-sm text-center mb-3" id="white-text">
+                <a href="https://github.com/alexkumar520" className="social"><i class="fa fa-github" aria-hidden="true" id="contact-icon"></i></a>
+                
+              </div>
+              <div class="col-sm text-center mb-3" id="white-text">
+                <a href="https://www.facebook.com/profile.php?id=100003521468126" className="social"><i class="fa fa-facebook-square" aria-hidden="true" id="contact-icon"></i></a>
+              </div>
+              <div class="col-sm text-center mb-3" id="white-text">
+                <a href="https://www.instagram.com/kumaralex_/?hl=en" className="social"><i class="fa fa-instagram" aria-hidden="true" id="contact-icon"></i></a>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
     
     
     </>

@@ -1,3 +1,12 @@
+
+a{
+    transition: 0.3s;
+}
+
+a:hover{
+    color: lightblue !important;
+}
+
 body{
     background-color: #ffeded;
     align-items: center;
@@ -7,10 +16,6 @@ html{
     scroll-behavior: smooth;
 }
 
-.navbar-custom{
-    color: lightcoral;
-}
-
 .welcome{
     margin: auto;
     justify-content: center;
@@ -18,6 +23,10 @@ html{
     text-decoration-color: red;
     align-items: center;
     
+}
+
+#white-text{
+    color: white;
 }
 
 .banner-text{
@@ -56,4 +65,38 @@ html{
     font-size: 32px;
     font-style: italic;
     font-weight: lighter;
+}
+
+#contact-icon{
+    font-size: 60px;
+    transition: 0.3s;
+}
+
+#contact-banner{
+    color:white;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.social{
+    color: white;
+}
+
+
+
+.fa-instagram:hover{
+    color: #e95950;
+}
+
+.fa-facebook-square:hover{
+    color: #3b5998;
+}
+
+.fa-github:hover{
+    color: lightblue;
+}
+
+
+.fa-linkedin-square:hover{
+    color: #2867B2;
 }

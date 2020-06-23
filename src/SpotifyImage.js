@@ -45,7 +45,7 @@ export default class SpotifyImage extends React.Component {
                     'Authorization': 'Bearer ' + res.data.access_token
                    }}
                 ).then(response => {
-                    //console.log(response);
+                    console.log(response.data);
                     //console.log(response.status);
                     //console.log(typeof(response.status));
                     if ((response.status) != 200 ){
@@ -66,6 +66,21 @@ export default class SpotifyImage extends React.Component {
                     //console.log(this.state.link);
 
                 }).catch(err => console.log(err))
+            
+            axios.get('https://api.spotify.com/v1/me/player/recently-played', {
+                headers: {
+                    'Authorization': 'Bearer ' + res.data.access_token
+                }, params : {
+                    limit: "10"
+                }
+                
+            }).then(finalres => {
+                console.log("RECENTLY PLAYED UNDER THIS :)")
+                console.log(finalres);
+            }).catch(newerror => {
+                console.log(newerror);
+            })
+            
 
         })
         .catch(err => console.log(err))
@@ -95,6 +110,7 @@ render(){
             <img src={this.state.image[0].url}className="image"></img>
             <a className="right"href={this.state.link}>{this.state.title}<br></br>by {artists}</a>
         </div>
+        
         </>
     )
             }
