@@ -15,7 +15,7 @@
 
 
 
-
+/* https://codepen.io/mike-schultz/pen/NgQvGO credit for animated border example */
 .gradient-border {
   --borderWidth: 5px;
   background: #181818;
