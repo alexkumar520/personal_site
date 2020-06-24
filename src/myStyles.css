@@ -3,8 +3,7 @@
 #box {
     
 
-    width: 550px;
-    height: 110px;
+    
     color: white;
     margin: auto;
     position: relative;
@@ -57,21 +56,27 @@
   .right {
     position: relative;
     color: white;
-    top: 35px;
-    right: 10px;
     font-family: "DejaVu Sans Mono", monospace;
     font-weight: 500;
     	
   }
 
+  
+
 
   
-  .image {
+  #image {
       position: relative;
-      float: left;
-      left: 5px;  
-      height: 100px;
-      width: 100px;
+      
+      border: 2px solid #1DB954;
+      height: 200px;
+      width: 200px;
       border-radius: 5px;
-      top: 5px;
+      
+  }
+
+
+  #nexbox{
+    border:2px solid #f00;
+    
   }

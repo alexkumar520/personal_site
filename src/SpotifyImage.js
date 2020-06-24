@@ -45,7 +45,7 @@ export default class SpotifyImage extends React.Component {
                     'Authorization': 'Bearer ' + res.data.access_token
                    }}
                 ).then(response => {
-                    console.log(response.data);
+                    //console.log(response.data);
                     //console.log(response.status);
                     //console.log(typeof(response.status));
                     if ((response.status) != 200 ){
@@ -75,8 +75,8 @@ export default class SpotifyImage extends React.Component {
                 }
                 
             }).then(finalres => {
-                console.log("RECENTLY PLAYED UNDER THIS :)")
-                console.log(finalres);
+                
+                //console.log(finalres);
             }).catch(newerror => {
                 console.log(newerror);
             })
@@ -99,17 +99,33 @@ render(){
     artists = artists.substring(0, artists.length-2);
     console.log(artists);
 
-     
+    
     
     if ((this.state.title) != ""){
     return (
         <>
-        
-        
-        <div className="gradient-border"id="box">
-            <img src={this.state.image[0].url}className="image"></img>
-            <a className="right"href={this.state.link}>{this.state.title}<br></br>by {artists}</a>
+        <div class="container bg-transparent">
+            
+            <div class="row">
+                <div class="col-sm">
+
+                </div>
+                <div class="col-sm-6 text-center gradient-border" id="box">
+                    
+                    <img src={this.state.image[1].url} class="center-block mt-4 mb-4 resize_fit_center_interest" id="image"></img>
+                    <br></br>
+                    <a class="right"href={this.state.link}>{this.state.title}<br></br>by {artists}</a>
+                    <br></br>
+                    <br></br>
+                </div>
+                <div class="col-sm">
+                    
+                </div>
+                
+            </div>
         </div>
+        
+        
         
         </>
     )
