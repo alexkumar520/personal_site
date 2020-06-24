@@ -39,6 +39,12 @@
   background-size: 300% 300%;
 }
 
+.right:hover{
+  color: #42f57e !important;
+}
+
+
+
 
 @keyframes animatedgradient {
 	0% {
