@@ -1,5 +1,11 @@
 
+.navbar-brand{
+    transition: 0.3s;
+}
 
+.nav-link{
+    transition: 0.3s;
+}
 
 a:hover{
     color: lightblue !important;

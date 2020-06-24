@@ -63,7 +63,8 @@
     position: relative;
     color: white;
     font-family: "DejaVu Sans Mono", monospace;
-    font-weight: 500;
+    font-weight: bold;
+    transition: 0.3s;
     	
   }
 
