@@ -2,9 +2,35 @@ import React from 'react';
 import axios from 'axios';
 import queryString from 'query-string';
 import './myStyles.css';
+import ToolTip from '@material-ui/core/Tooltip';
+//import alex from './alex.jpg' implement when adding everything else. 
+import spotify from './Spotify_Icon_RGB_Green.png';
+import { withStyles } from '@material-ui/core/styles';
+
+const DarkToolTip = withStyles((theme) => ({
+    tooltip: {
+      backgroundColor: theme.palette.common.black,
+      color: 'rgba(0, 0, 0, 0.87)',
+      boxShadow: theme.shadows[1],
+      fontSize: 11,
+      textAlign: 'center',
+      fontSize: '15px',
+      maxWidth: '400px',
+      justifyContent: 'center',
+      alignContent: 'center'
+    },
+    arrow: {
+        color: theme.palette.common.black
+    }
+  }))(ToolTip);
+
+
 
 
 export default class SpotifyImage extends React.Component {
+    
+    
+    
     state = {
         
         image : [],
@@ -13,7 +39,10 @@ export default class SpotifyImage extends React.Component {
         link : ""
     }
 
+    
+
     componentDidMount(){
+        
         
         const headers = {
             headers: {
@@ -91,6 +120,8 @@ export default class SpotifyImage extends React.Component {
     }
 
 render(){
+    
+    
     var int;
     var artists = "";
     for (int = 0; int < this.state.artists.length; int++){
@@ -114,9 +145,23 @@ render(){
                     
                     <img src={this.state.image[1].url} class="center-block mt-4 mb-4 resize_fit_center_interest" id="image"></img>
                     <br></br>
-                    <a class="right"href={this.state.link}>{this.state.title}<br></br>by {artists}</a>
+                        <DarkToolTip title={
+                            <>
+                                <div className="hold">
+                                
+                                    <img className="spotify-img" src={spotify}></img>
+                                
+                                <p> Check this song out on Spotify!</p>
+                                </div>
+                            </>
+                        } arrow>
+                            <div>
+                                
+                                <a className="right mt-3" href={this.state.link}>{this.state.title}<br></br>by {artists}</a>
+                            </div>
+                        </DarkToolTip>
                     <br></br>
-                    <br></br>
+                    
                 </div>
                 <div class="col-sm">
                     
@@ -130,7 +175,7 @@ render(){
         </>
     )
             }
-    else{
+    else{ //this is for when currently-playing essentially returns nothing cause im either not live or on phone
         return(
             <div className="gradient-border"id="box">
                 <p className="right">Surprisingly, I'm not listening to anything right now... <br></br> Try again later!</p>

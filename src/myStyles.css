@@ -87,3 +87,15 @@
     border:2px solid #f00;
     
   }
+
+
+  .spotify-img{
+    float: left;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .hold{
+    color: white;
+  }
