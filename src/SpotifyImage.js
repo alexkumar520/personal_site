@@ -12,7 +12,6 @@ const DarkToolTip = withStyles((theme) => ({
       backgroundColor: theme.palette.common.black,
       color: 'rgba(0, 0, 0, 0.87)',
       boxShadow: theme.shadows[1],
-      fontSize: 11,
       textAlign: 'center',
       fontSize: '15px',
       maxWidth: '400px',
@@ -128,10 +127,8 @@ render(){
         artists += this.state.artists[int].name + ", "
     }
     artists = artists.substring(0, artists.length-2);
-    console.log(artists);
+    
 
-    
-    
     if ((this.state.title) != ""){
     return (
         <>
