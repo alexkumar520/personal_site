@@ -146,15 +146,15 @@ render(){
                             <>
                                 <div className="hold">
                                 
-                                    <img className="spotify-img" src={spotify}></img>
+                                    <img className="spotify-img mt-1" src={spotify}></img>
                                 
-                                <p> Check this song out on Spotify!</p>
+                                <p class="mt-3"> Check this song out on Spotify!</p>
                                 </div>
                             </>
                         } arrow>
                             <div>
                                 
-                                <a className="right mt-3" href={this.state.link}>{this.state.title}<br></br>by {artists}</a>
+                                <a className="right" href={this.state.link}>{this.state.title}<br></br>by {artists}</a>
                             </div>
                         </DarkToolTip>
                     <br></br>
