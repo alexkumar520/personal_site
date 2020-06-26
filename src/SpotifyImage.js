@@ -174,9 +174,22 @@ render(){
             }
     else{ //this is for when currently-playing essentially returns nothing cause im either not live or on phone
         return(
-            <div className="gradient-border"id="box">
-                <p className="right">Surprisingly, I'm not listening to anything right now... <br></br> Try again later!</p>
+            <div class="container bg-transparent">
+            
+            <div class="row">
+                <div class="col-sm">
+
+                </div>
+                <div class="col-sm-6 text-center gradient-border" id="box">
+                    <p>Surprisingly I'm not listening to anything right now...<br></br>Try again later!</p>
+                </div>    
+                    
+                <div class="col-sm">
+                    
+                </div>
+                
             </div>
+        </div>
         )
     }
 }
