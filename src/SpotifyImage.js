@@ -29,19 +29,18 @@ const DarkToolTip = withStyles((theme) => ({
 export default class SpotifyImage extends React.Component {
     
     
-    
     state = {
         
         image : [],
         title : "",
         artists : [],
-        link : ""
+        link : "",
+        videoId: ""
     }
 
     
 
     componentDidMount(){
-        
         
         const headers = {
             headers: {
@@ -86,6 +85,38 @@ export default class SpotifyImage extends React.Component {
                         artists: response.data.item.artists,
                         link: response.data.item.external_urls.spotify
                     });
+                    //console.log(this.state.artists);
+                    //console.log(response.data.item.artists);
+                    var newint;
+                    var queryartists = "";
+                    for (newint = 0; newint < response.data.item.artists.length; newint++){
+                        console.log("local test" + response.data.item.artists[newint]);
+                        queryartists += response.data.item.artists[newint].name + ", ";
+                    }
+                    queryartists = queryartists.substring(0, queryartists.length-2);
+
+                    //console.log(queryartists);
+
+
+                    axios.get('https://www.googleapis.com/youtube/v3/search',{
+                        params:{
+                            part: 'snippet',
+                            maxResults: 1,
+                            key: process.env.REACT_APP_CLIENT_KEY,
+                            q: response.data.item.name + " " +  queryartists,
+                            
+                                
+                        }
+                    }).then(vidres =>{
+                            console.log(vidres);
+                            this.setState({
+                                videoId: vidres.data.items[0].id.videoId
+                            })
+                            //console.log(vidres.data.items[0].id.videoId);
+                    }).catch(viderror => {
+                        console.log(viderror);
+                    })
+                    
                 }
 
                     //console.log(this.state.image);
@@ -101,13 +132,18 @@ export default class SpotifyImage extends React.Component {
                 }, params : {
                     limit: "10"
                 }
+
+            
                 
             }).then(finalres => {
                 
                 //console.log(finalres);
             }).catch(newerror => {
                 console.log(newerror);
+                console.log("youtube playback unavailable!")
             })
+
+            
             
 
         })
@@ -132,7 +168,13 @@ render(){
     if ((this.state.title) != ""){
     return (
         <>
-        <div class="container bg-transparent">
+
+        <p class="text-center youtube mb-5">
+            I'm jamming out to this song using Spotify...
+        </p>
+
+
+        <div class="container bg-transparent mb-5">
             
             <div class="row">
                 <div class="col-sm">
@@ -148,7 +190,7 @@ render(){
                                 
                                     <img className="spotify-img mt-1" src={spotify}></img>
                                 
-                                <p class="mt-3"> Check this song out on Spotify!</p>
+                                <p class="mt-3 tooltext"> Check this song out on Spotify!</p>
                                 </div>
                             </>
                         } arrow>
@@ -166,6 +208,34 @@ render(){
                 
             </div>
         </div>
+        
+        <p class="text-center youtube">Check out what I'm listening to on YouTube if you'd like as well!</p>
+                        
+        <div
+                class="container mt-5"
+                style={{
+                    position: "relative",
+                    paddingBottom: "56.25%" /* 16:9 */,
+                    paddingTop: 25,
+                    height: 0
+                }}
+                >
+                    <iframe
+                        style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "60%"
+                        }}
+                        src={`https://www.youtube.com/embed/${this.state.videoId}`}
+                        frameBorder="0"
+                />
+        </div>
+
+        
+
+        
         
         
         

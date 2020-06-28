@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 #box {
     
@@ -98,4 +98,14 @@
 
   .hold{
     color: white;
+  }
+
+  .tooltext{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 100;
+  }
+
+  .youtube{
+    font-size: 32px;
   }

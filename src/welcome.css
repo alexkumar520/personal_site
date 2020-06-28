@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Tajawal:wght@500&display=swap');
+
+
 
 .navbar-brand{
     transition: 0.3s;
@@ -12,7 +15,7 @@ a:hover{
 }
 
 body{
-    
+    font-family: 'Tajawal', sans-serif !important;
     align-items: center;
 }
 

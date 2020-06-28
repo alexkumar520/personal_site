@@ -2,6 +2,7 @@ import React from 'react';
 import SpotifyImage from './SpotifyImage';
 import './welcome.css';
 import alex from './alex.jpg';
+import Particles from 'react-particles-js';
 
 
 
@@ -10,6 +11,7 @@ import alex from './alex.jpg';
 function App() {
   return (
     <>
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
       <a class="navbar-brand" href="/" id="white-text">Alex Kumar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" id="white-text">
@@ -32,16 +34,8 @@ function App() {
 
     <br></br>
     <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
+    
+    
     
     <SpotifyImage />
     <br></br>
