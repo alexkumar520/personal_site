@@ -108,7 +108,7 @@ export default class SpotifyImage extends React.Component {
                                 
                         }
                     }).then(vidres =>{
-                            console.log(vidres);
+                            //console.log(vidres);
                             this.setState({
                                 videoId: vidres.data.items[0].id.videoId
                             })
