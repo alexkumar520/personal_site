@@ -229,6 +229,7 @@ render(){
                         height: "60%"
                         }}
                         src={`https://www.youtube.com/embed/${this.state.videoId}`}
+                        allowFullScreen="allowFullScreen"
                         frameBorder="0"
                 />
         </div>
