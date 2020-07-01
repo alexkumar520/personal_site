@@ -37,13 +37,15 @@ function App() {
 
     <div class="jumbotron">
       <animated.div style={first_fade}>
-      <h1 class="display-4 mb-5">Hey I'm Alex!</h1>
+      <h1 class="display-4 mb-5">Hey, I'm Alex!</h1>
       </animated.div>
 
       <animated.div style={second_fade}>
       
       <p class="enter">Welcome to my website!</p>
       </animated.div>
+
+      
     </div>
 
 

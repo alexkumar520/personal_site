@@ -114,4 +114,10 @@ html{
 
 .enter{
     font-size: 32px;
+    
+}
+
+.jumbotron{
+    justify-content: center;
+    text-align: center;
 }
