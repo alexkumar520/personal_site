@@ -51,8 +51,9 @@ function App() {
     <br></br>
     
     
-    
+    <animated.div style={fade_in}>
     <SpotifyImage />
+    </animated.div>
     <br></br>
     <br></br>
     <br></br>

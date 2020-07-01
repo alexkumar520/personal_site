@@ -107,3 +107,7 @@ html{
 .fa-linkedin-square:hover{
     color: #2867B2;
 }
+
+.jumbotron{
+    background-color: transparent !important;
+}
