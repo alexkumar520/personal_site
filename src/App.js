@@ -2,16 +2,18 @@ import React from 'react';
 import SpotifyImage from './SpotifyImage';
 import './welcome.css';
 import alex from './alex.jpg';
-import Particles from 'react-particles-js';
-
+import {useSpring, animated} from 'react-spring';
 
 
 
 
 function App() {
+  const first_fade = useSpring({opacity: 1, from: {opacity: 0}, delay: 200, config: {duration: 1000}});
+  const fade_in = useSpring({opacity: 1, from: {opacity: 0}, delay: 2000});
+  const second_fade = useSpring({opacity: 1, from: {opacity: 0}, delay: 1200, config: {duration: 500}});
   return (
     <>
-    
+    <animated.div style={fade_in}>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
       <a class="navbar-brand" href="/" id="white-text">Alex Kumar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" id="white-text">
@@ -31,6 +33,19 @@ function App() {
         
       </div>
     </nav>
+    </animated.div>
+
+    <div class="jumbotron">
+      <animated.div style={first_fade}>
+      <h1 class="display-4">Hey I'm Alex!</h1>
+      </animated.div>
+
+      <animated.div style={second_fade}>
+      <hr class="my-4"/>
+      <p>Welcome to my website!</p>
+      </animated.div>
+    </div>
+
 
     <br></br>
     <br></br>
