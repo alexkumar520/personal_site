@@ -111,3 +111,7 @@ html{
 .jumbotron{
     background-color: transparent !important;
 }
+
+.enter{
+    font-size: 32px;
+}

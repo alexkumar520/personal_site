@@ -9,8 +9,8 @@ import {useSpring, animated} from 'react-spring';
 
 function App() {
   const first_fade = useSpring({opacity: 1, from: {opacity: 0}, delay: 200, config: {duration: 1000}});
-  const fade_in = useSpring({opacity: 1, from: {opacity: 0}, delay: 2000});
-  const second_fade = useSpring({opacity: 1, from: {opacity: 0}, delay: 1200, config: {duration: 500}});
+  const fade_in = useSpring({opacity: 1, from: {opacity: 0}, delay: 2500});
+  const second_fade = useSpring({opacity: 1, from: {opacity: 0}, delay: 1200, config: {duration: 1000}});
   return (
     <>
     <animated.div style={fade_in}>
@@ -37,12 +37,12 @@ function App() {
 
     <div class="jumbotron">
       <animated.div style={first_fade}>
-      <h1 class="display-4">Hey I'm Alex!</h1>
+      <h1 class="display-4 mb-5">Hey I'm Alex!</h1>
       </animated.div>
 
       <animated.div style={second_fade}>
-      <hr class="my-4"/>
-      <p>Welcome to my website!</p>
+      
+      <p class="enter">Welcome to my website!</p>
       </animated.div>
     </div>
 
