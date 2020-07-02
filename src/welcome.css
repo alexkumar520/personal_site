@@ -121,3 +121,12 @@ html{
     justify-content: center;
     text-align: center;
 }
+
+.image_hold{
+    text-align: center;
+}
+
+.alex_image{
+    height: 200px;
+    width: 200px;
+}

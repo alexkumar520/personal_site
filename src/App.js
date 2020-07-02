@@ -9,8 +9,9 @@ import {useSpring, animated} from 'react-spring';
 
 function App() {
   const first_fade = useSpring({opacity: 1, from: {opacity: 0}, delay: 200, config: {duration: 1000}});
-  const fade_in = useSpring({opacity: 1, from: {opacity: 0}, delay: 2500});
+  const fade_in = useSpring({opacity: 1, from: {opacity: 0}, delay: 3500});
   const second_fade = useSpring({opacity: 1, from: {opacity: 0}, delay: 1200, config: {duration: 1000}});
+  const third_fade = useSpring({opacity: 1, from: {opacity: 0}, delay: 2200, config: {duration: 1000}});
   return (
     <>
     <animated.div style={fade_in}>
@@ -35,22 +36,29 @@ function App() {
     </nav>
     </animated.div>
 
-    <div class="jumbotron">
+    <div class="jumbotron mb-1">
       <animated.div style={first_fade}>
       <h1 class="display-4 mb-5">Hey, I'm Alex!</h1>
       </animated.div>
 
       <animated.div style={second_fade}>
       
-      <p class="enter">Welcome to my website!</p>
+      <p class="enter">Take a look around my website to learn a little more about me!</p>
       </animated.div>
 
       
     </div>
 
-
-    <br></br>
-    <br></br>
+    <animated.div style={third_fade}>  
+    <div class="container bg-transparent mb-5">
+            
+            <div class="row image_hold">
+                <div class="col-sm mx-auto">
+                  <img src={alex} class="rounded-circle alex_image"></img>
+                </div>
+            </div>
+        </div>
+      </animated.div>
     
     
     <animated.div style={fade_in}>
