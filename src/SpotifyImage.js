@@ -128,12 +128,12 @@ render(){
         <>
 
         
-        <p class="text-center youtube mb-5">
+        <p class="text-center youtube mt-5 mb-5" id="listening">
             I'm jamming out to this song using Spotify...
         </p>
         
 
-        <div class="container bg-transparent mb-5">
+        <div class="container bg-transparent mt-5 mb-5">
             
             <div class="row">
                 <div class="col-sm">

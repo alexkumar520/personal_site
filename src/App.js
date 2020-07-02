@@ -1,8 +1,11 @@
 import React from 'react';
 import SpotifyImage from './SpotifyImage';
 import './welcome.css';
-import alex from './alex.jpg';
+import alex from './alex_new.jpg';
 import {useSpring, animated} from 'react-spring';
+import f_alex from './f_alex.jpg';
+import b_alex from './blue_alex.jpg';
+
 
 
 
@@ -24,11 +27,15 @@ function App() {
       <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="#box" id="white-text">About Me </a>
+            <a class="nav-link" href="#listening" id="white-text">About Me </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#listening" id="white-text">I'm Listening to...</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#contact" id="white-text">Other info</a>
           </li>
+          
           
         </ul>
         
@@ -36,32 +43,52 @@ function App() {
     </nav>
     </animated.div>
 
-    <div class="jumbotron mb-1">
+    <div class="jumbotron">
       <animated.div style={first_fade}>
-      <h1 class="display-4 mb-5">Hey, I'm Alex!</h1>
+      <h1 class="display-4 mt-5">Hey, I'm Alex!</h1>
       </animated.div>
 
       <animated.div style={second_fade}>
       
       <p class="enter">Take a look around my website to learn a little more about me!</p>
-      </animated.div>
+      </animated.div> 
 
       
     </div>
 
     <animated.div style={third_fade}>  
-    <div class="container bg-transparent mb-5">
+    <div class="container-fluid bg-transparent mb-5">
             
             <div class="row image_hold">
                 <div class="col-sm mx-auto">
-                  <img src={alex} class="rounded-circle alex_image"></img>
+                  <img src={b_alex} class="alex_image rounded"></img>
+                </div>
+
+                <div class="col-sm mx-auto">
+                  <img src={alex} class="alex_image rounded"></img>
+                </div>
+
+                <div class="col-sm mx-auto">
+                  <img src={f_alex} class="alex_image rounded"></img>
                 </div>
             </div>
         </div>
       </animated.div>
+
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
     
     
-    <animated.div style={fade_in}>
+    <animated.div style={fade_in} class="mt-5">
     <SpotifyImage />
     </animated.div>
     <br></br>
