@@ -6,6 +6,7 @@ import {useSpring, animated} from 'react-spring';
 import f_alex from './f_alex.jpg';
 import b_alex from './blue_alex.jpg';
 import anteater from './BCeater-left.png';
+import lakers from './lakers.png';
 
 
 
@@ -28,7 +29,7 @@ function App() {
       <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="#listening" id="white-text">About Me </a>
+            <a class="nav-link" href="#about-me" id="white-text">About Me </a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#listening" id="white-text">I'm Listening to...</a>
@@ -79,9 +80,9 @@ function App() {
     
 
 
-    <h1 class="about">A little bit about me...</h1>
+    <h1 class="about" id="about-me">A little bit about me...</h1>
     
-    <div class="container bg-transparent">
+    <div class="container bg-transparent uci-part">
         <div class="row">
         <div class="col-sm">
         <p class="about-detail">I'm currently an undergraduate student enrolled at the University of California, Irvine, and I am pursuing a Bachelors in Computer Science!</p>
@@ -95,40 +96,29 @@ function App() {
     
     
 
+    <div class="container bg-transparent ball">
+      <div class="row">
+        <div class="col-sm">
+          <p class="about-detail">I really love basketball. I'm a diehard Lakers fan and I consider Kobe to be the GOAT. When I was in high school, I actually went to school with Lonzo Ball, who eventually ended up on the Lakers. </p>
+          
+          
+        </div>
+        <div class="col-sm make_c">
+            <img src={lakers} class='anteater'></img>
+        </div>
+      </div>
+    </div>
+    
+
    
     
     
-    <animated.div style={fade_in} class="mt-5">
-    <SpotifyImage />
-    </animated.div>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-
     
-
+    <SpotifyImage />
     <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
+    <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+    
+    
     <div className="darken">
 
       <div class="container-fluid bg-dark" id="contact">

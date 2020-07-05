@@ -128,18 +128,17 @@ render(){
         <>
 
         
-        <p class="text-center youtube mt-5 mb-5" id="listening">
-            I'm jamming out to this song using Spotify...
-        </p>
+        
         
 
-        <div class="container bg-transparent mt-5 mb-5">
+        <div class="container bg-transparent mt-5 mb-5 spotify-display" id="listening">
             
             <div class="row">
-                <div class="col-sm">
-
+                <div class="col-sm-5 detail">
+                    If you catch me in person I'll most likely have my earphones on and be listening to music. I don't really have a music taste in particular; whatever song gives me goosebumps, I'll be jamming out to it. On the right is the current song I'm listening to using Spotify! Hover over the title to check out the song! *if I'm actually listening*
                 </div>
-                <div class="col-sm-6 text-center gradient-border fade-in" id="box">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-4 text-center gradient-border fade-in" id="box">
                     
                     <img src={this.state.image[1].url} class="center-block mt-4 mb-4 resize_fit_center_interest" id="image"></img>
                     <br></br>
@@ -161,9 +160,7 @@ render(){
                     <br></br>
                     
                 </div>
-                <div class="col-sm">
-                    
-                </div>
+                
                 
             </div>
         </div>
@@ -180,19 +177,19 @@ render(){
             }
     else{ //this is for when currently-playing essentially returns nothing cause im either not live or on phone
         return(
-            <div class="container bg-transparent">
+            <div class="container bg-transparent mt-5 mb-5 spotify-display" id="listening">
             
             <div class="row">
-                <div class="col-sm">
-
+                <div class="col-sm-5 detail">
+                    If you catch me in person I'll most likely have my earphones on and be listening to music. I don't really have a music taste in particular; whatever song gives me goosebumps, I'll be jamming out to it. On the right is the current song I'm listening to using Spotify! Hover over the title to check out the song! *if I'm actually listening*
                 </div>
-                <div class="col-sm-6 text-center gradient-border" id="box">
-                    <p>Surprisingly I'm not listening to anything right now...<br></br>Try again later!</p>
-                </div>    
+                <div class="col-sm-1"></div>
+                <div class="col-sm-4 text-center gradient-border fade-in" id="box">
                     
-                <div class="col-sm">
+                    <p class="detail">Unfortunately, you caught me at a bad time... <br></br> Maybe try again later!</p>
                     
                 </div>
+                
                 
             </div>
         </div>

@@ -8,7 +8,7 @@
     margin: auto;
     position: relative;
     
-    text-align: center;
+    float: right;
  
     
 }
@@ -21,7 +21,7 @@
   background: #181818;
   position: relative;
   border-radius: var(--borderWidth);
-  justify-content: center;
+  float: right;
   
   
 }
@@ -110,4 +110,15 @@
     font-size: 32px;
   }
 
+
+  .detail{
+    font-size: 24px;
+    margin-bottom: 50px;
+    
+  }
+
+  .spotify-display{
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+  }
   

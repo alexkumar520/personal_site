@@ -153,3 +153,19 @@ html{
     justify-content: center;
     text-align: center;
 }
+
+.uci-part{
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.hobbies{
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.ball{
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
