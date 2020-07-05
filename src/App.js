@@ -5,6 +5,7 @@ import alex from './alex_new.jpg';
 import {useSpring, animated} from 'react-spring';
 import f_alex from './f_alex.jpg';
 import b_alex from './blue_alex.jpg';
+import anteater from './BCeater-left.png';
 
 
 
@@ -75,17 +76,26 @@ function App() {
         </div>
       </animated.div>
 
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
+    
+
+
+    <h1 class="about">A little bit about me...</h1>
+    
+    <div class="container bg-transparent">
+        <div class="row">
+        <div class="col-sm">
+        <p class="about-detail">I'm currently an undergraduate student enrolled at the University of California, Irvine, and I am pursuing a Bachelors in Computer Science!</p>
+        </div>
+        <div class="col-sm make_c">
+          <img src={anteater} class='anteater'></img>
+        </div>
+
+        </div>
+    </div>
+    
+    
+
+   
     
     
     <animated.div style={fade_in} class="mt-5">
