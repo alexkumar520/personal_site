@@ -186,7 +186,7 @@ render(){
                 <div class="col-sm-1"></div>
                 <div class="col-sm-4 text-center gradient-border fade-in" id="box">
                     
-                    <p class="detail">Unfortunately, you caught me at a bad time... <br></br> Maybe try again later!</p>
+                    <p class="detail">Unfortunately, you managed to check my website when I'm not listening to anything... <br></br> Maybe try again later!</p>
                     
                 </div>
                 
