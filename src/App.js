@@ -85,7 +85,7 @@ function App() {
     <div class="container bg-transparent uci-part">
         <div class="row">
         <div class="col-sm">
-        <p class="about-detail">I'm currently an undergraduate student enrolled at the University of California, Irvine, and I am pursuing a Bachelors in Computer Science!</p>
+        <p class="about-detail">I'm currently an undergraduate student enrolled at the University of California, Irvine, and I am currently completing a Bachelors in Computer Science! I want to pursue a career in Software Enginnering.</p>
         </div>
         <div class="col-sm make_c">
           <img src={anteater} class='anteater'></img>
