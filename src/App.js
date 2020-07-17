@@ -7,6 +7,7 @@ import f_alex from './f_alex.jpg';
 import b_alex from './blue_alex.jpg';
 import anteater from './BCeater-left.png';
 import lakers from './lakers.png';
+import resume from './alex_res_2.pdf'
 
 
 
@@ -30,6 +31,9 @@ function App() {
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
           <li class="nav-item active">
             <a class="nav-link" href="#about-me" id="white-text">About Me </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href={resume} id="white-text">My resume</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#listening" id="white-text">I'm Listening to...</a>
