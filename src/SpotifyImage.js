@@ -134,7 +134,7 @@ render(){
         <div class="container bg-transparent mt-5 mb-5 spotify-display" id="listening">
             
             <div class="row">
-                <div class="col-sm-5 detail">
+                <div class="col-sm-5 detail" id="white">
                     If you catch me in person I'll most likely have my earphones on and be listening to music. I don't really have a music taste in particular; whatever song gives me goosebumps, I'll be jamming out to it. On the right is the current song I'm listening to using Spotify! Hover over the title to check out the song! *if I'm actually listening*
                 </div>
                 <div class="col-sm-1"></div>
@@ -180,7 +180,7 @@ render(){
             <div class="container bg-transparent mt-5 mb-5 spotify-display" id="listening">
             
             <div class="row">
-                <div class="col-sm-5 detail">
+                <div class="col-sm-5 detail" id="white">
                     If you catch me in person I'll most likely have my earphones on and be listening to music. I don't really have a music taste in particular; whatever song gives me goosebumps, I'll be jamming out to it. On the right is the current song I'm listening to using Spotify! Hover over the title to check out the song! *if I'm actually listening*
                 </div>
                 <div class="col-sm-1"></div>

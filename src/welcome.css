@@ -17,6 +17,7 @@ a:hover{
 body{
     font-family: 'Tajawal', sans-serif !important;
     align-items: center;
+    background-color: black;
 }
 
 html{
@@ -138,6 +139,7 @@ html{
     padding-bottom: 50px;
     font-size: 46px;
 }
+
 
 .about-detail{
     font-size: 24px;

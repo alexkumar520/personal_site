@@ -20,8 +20,8 @@ function App() {
   const third_fade = useSpring({opacity: 1, from: {opacity: 0}, delay: 2200, config: {duration: 1000}});
   return (
     <>
-    <animated.div style={fade_in}>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+    
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-dark">
       <a class="navbar-brand" href="/" id="white-text">Alex Kumar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" id="white-text">
         <span class="navbar-toggler-icon"></span>
@@ -33,10 +33,10 @@ function App() {
             <a class="nav-link" href="#about-me" id="white-text">About Me </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href={resume} id="white-text">My resume</a>
+            <a class="nav-link" href="#listening" id="white-text">I'm Listening to...</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#listening" id="white-text">I'm Listening to...</a>
+            <a class="nav-link" href={resume} id="white-text">My resume</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#contact" id="white-text">Other info</a>
@@ -47,16 +47,16 @@ function App() {
         
       </div>
     </nav>
-    </animated.div>
+    
 
     <div class="jumbotron">
       <animated.div style={first_fade}>
-      <h1 class="display-4 mt-5">Hey, I'm Alex!</h1>
+      <h1 class="display-4 mt-5" id="white-text">Hey, I'm Alex!</h1>
       </animated.div>
 
       <animated.div style={second_fade}>
       
-      <p class="enter">Take a look around my website to learn a little more about me!</p>
+      <p class="enter" id="white-text">Take a look around my website to learn a little more about me!</p>
       </animated.div> 
 
       
@@ -84,12 +84,12 @@ function App() {
     
 
 
-    <h1 class="about" id="about-me">A little bit about me...</h1>
+    <h1 class="about" id="white-text">A little bit about me...</h1>
     
     <div class="container bg-transparent uci-part">
         <div class="row">
         <div class="col-sm">
-        <p class="about-detail">I'm currently an undergraduate student enrolled at the University of California, Irvine, and I am currently completing a Bachelors in Computer Science! I want to pursue a career in Software Enginnering.</p>
+        <p class="about-detail" id="white-text">I'm currently an undergraduate student enrolled at the University of California, Irvine, and I am currently completing a Bachelors in Computer Science! I want to pursue a career in Software Enginnering.</p>
         </div>
         <div class="col-sm make_c">
           <img src={anteater} class='anteater'></img>
@@ -103,7 +103,7 @@ function App() {
     <div class="container bg-transparent ball">
       <div class="row">
         <div class="col-sm">
-          <p class="about-detail">I really love basketball. I'm a diehard Lakers fan and I consider Kobe to be the GOAT. When I was in high school, I actually went to school with Lonzo Ball, who eventually ended up on the Lakers. </p>
+          <p class="about-detail" id="white-text">I really love basketball. I'm a diehard Lakers fan and I consider Kobe to be the GOAT. When I was in high school, I actually went to school with Lonzo Ball, who eventually ended up on the Lakers. </p>
           
           
         </div>
@@ -119,11 +119,12 @@ function App() {
     
     
     <SpotifyImage />
-    <br></br>
-    <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
     
     
-    <div className="darken">
+    
+    
+    
+    <div className="darken mt-5 pt-5">
 
       <div class="container-fluid bg-dark" id="contact">
         <p class="text-center" id="contact-banner">Check out my social media!</p>
