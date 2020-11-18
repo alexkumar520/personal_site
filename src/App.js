@@ -7,7 +7,7 @@ import f_alex from './f_alex.jpg';
 import b_alex from './blue_alex.jpg';
 import anteater from './BCeater-left.png';
 import lakers from './lakers.png';
-import resume from './alex_res_2.pdf'
+import resume from './Alex_Kumar_resume.pdf'
 
 
 
