@@ -89,7 +89,7 @@ function App() {
     <div class="container bg-transparent uci-part">
         <div class="row">
         <div class="col-sm">
-        <p class="about-detail" id="white-text">I'm currently an undergraduate student enrolled at the University of California, Irvine, and I am currently completing a Bachelors in Computer Science! I want to pursue a career in Software Enginnering.</p>
+        <p class="about-detail" id="white-text">I graduated from the University of California, Irvine with a Bachelor's in Computer Science, and am currently working at Walmart as a full time Software Engineer!</p>
         </div>
         <div class="col-sm make_c">
           <img src={anteater} class='anteater'></img>
@@ -103,7 +103,7 @@ function App() {
     <div class="container bg-transparent ball">
       <div class="row">
         <div class="col-sm">
-          <p class="about-detail" id="white-text">I really love basketball. I'm a diehard Lakers fan and I consider Kobe to be the GOAT. When I was in high school, I actually went to school with Lonzo Ball, who eventually ended up on the Lakers. </p>
+          <p class="about-detail" id="white-text">I really love basketball. I'm a diehard Lakers fan and Kobe Bryant is my most favorite player of all time.</p>
           
           
         </div>
