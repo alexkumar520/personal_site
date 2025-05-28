@@ -137,13 +137,6 @@ function App() {
               </div>
               <div class="col-sm text-center mb-3" id="white-text">
                 <a href="https://github.com/alexkumar520" className="social"><i class="fa fa-github" aria-hidden="true" id="contact-icon"></i></a>
-                
-              </div>
-              <div class="col-sm text-center mb-3" id="white-text">
-                <a href="https://www.facebook.com/profile.php?id=100003521468126" className="social"><i class="fa fa-facebook-square" aria-hidden="true" id="contact-icon"></i></a>
-              </div>
-              <div class="col-sm text-center mb-3" id="white-text">
-                <a href="https://www.instagram.com/kumaralex_/?hl=en" className="social"><i class="fa fa-instagram" aria-hidden="true" id="contact-icon"></i></a>
               </div>
             </div>
             
