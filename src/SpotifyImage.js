@@ -6,7 +6,6 @@ import ToolTip from '@material-ui/core/Tooltip';
 //import alex from './alex.jpg' implement when adding everything else. 
 import spotify from './Spotify_Icon_RGB_Green.png';
 import { withStyles } from '@material-ui/core/styles';
-import {useSpring, animated} from 'react-spring';
 
 const DarkToolTip = withStyles((theme) => ({
     tooltip: {
@@ -79,7 +78,7 @@ export default class SpotifyImage extends React.Component {
                     //console.log(response.data);
                     //console.log(response.status);
                     //console.log(typeof(response.status));
-                    if ((response.status) != 200 ){
+                    if ((response.status) !== 200 ){
                         console.log("Not playing anything");
                     }
                     else{
@@ -123,7 +122,7 @@ render(){
     artists = artists.substring(0, artists.length-2);
     
 
-    if ((this.state.title) != ""){
+    if ((this.state.title) !== ""){
     return (
         <>
 
@@ -140,13 +139,13 @@ render(){
                 <div class="col-sm-1"></div>
                 <div class="col-sm-4 text-center gradient-border fade-in" id="box">
                     
-                    <img src={this.state.image[1].url} class="center-block mt-4 mb-4 resize_fit_center_interest" id="image"></img>
+                    <img src={this.state.image[1].url} class="center-block mt-4 mb-4 resize_fit_center_interest" id="image" alt="Album cover"></img>
                     <br></br>
                         <DarkToolTip title={
                             <>
                                 <div className="hold">
                                 
-                                    <img className="spotify-img mt-1" src={spotify}></img>
+                                    <img className="spotify-img mt-1" src={spotify} alt="Spotify"></img>
                                 
                                 <p class="mt-3 tooltext"> Check this song out on Spotify!</p>
                                 </div>

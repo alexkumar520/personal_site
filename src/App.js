@@ -15,7 +15,6 @@ import resume from './Alex_Kumar_resume.pdf'
 
 function App() {
   const first_fade = useSpring({opacity: 1, from: {opacity: 0}, delay: 200, config: {duration: 1000}});
-  const fade_in = useSpring({opacity: 1, from: {opacity: 0}, delay: 3500});
   const second_fade = useSpring({opacity: 1, from: {opacity: 0}, delay: 1200, config: {duration: 1000}});
   const third_fade = useSpring({opacity: 1, from: {opacity: 0}, delay: 2200, config: {duration: 1000}});
   return (
@@ -67,15 +66,15 @@ function App() {
             
             <div class="row image_hold">
                 <div class="col-sm mx-auto">
-                  <img src={b_alex} class="alex_image rounded"></img>
+                  <img src={b_alex} class="alex_image rounded" alt="Alex Kumar"></img>
                 </div>
 
                 <div class="col-sm mx-auto">
-                  <img src={alex} class="alex_image rounded"></img>
+                  <img src={alex} class="alex_image rounded" alt="Alex Kumar"></img>
                 </div>
 
                 <div class="col-sm mx-auto">
-                  <img src={f_alex} class="alex_image rounded"></img>
+                  <img src={f_alex} class="alex_image rounded" alt="Alex Kumar"></img>
                 </div>
             </div>
         </div>
@@ -92,7 +91,7 @@ function App() {
         <p class="about-detail" id="white-text">I graduated from the University of California, Irvine with a Bachelor's in Computer Science, and have experience as a backend engineer, working at both Amazon and Walmart.</p>
         </div>
         <div class="col-sm make_c">
-          <img src={anteater} class='anteater'></img>
+          <img src={anteater} class='anteater' alt="UC Irvine Anteater"></img>
         </div>
 
         </div>
@@ -108,7 +107,7 @@ function App() {
           
         </div>
         <div class="col-sm make_c">
-            <img src={lakers} class='anteater'></img>
+            <img src={lakers} class='anteater' alt="Los Angeles Lakers logo"></img>
         </div>
       </div>
     </div>
@@ -132,11 +131,11 @@ function App() {
           <div class="container bg-dark">
             <div class="row">
               <div class="col-sm text-center mb-3" id="white-text">
-              <a href="https://www.linkedin.com/in/alexkumar520/" className="social"><i class="fa fa-linkedin-square" aria-hidden="true" id="contact-icon"></i></a>
+              <a href="https://www.linkedin.com/in/alexkumar520/" className="social" aria-label="LinkedIn"><i class="fa fa-linkedin-square" id="contact-icon" aria-hidden="false"></i><span className="sr-only">LinkedIn</span></a>
               
               </div>
               <div class="col-sm text-center mb-3" id="white-text">
-                <a href="https://github.com/alexkumar520" className="social"><i class="fa fa-github" aria-hidden="true" id="contact-icon"></i></a>
+                <a href="https://github.com/alexkumar520" className="social" aria-label="GitHub"><i class="fa fa-github" id="contact-icon" aria-hidden="false"></i><span className="sr-only">GitHub</span></a>
               </div>
             </div>
             
